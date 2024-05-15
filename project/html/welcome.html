@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/welcome.css">
+    <title>welcome</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="title">Log In</h1>
+            <input type="text" id="emailLog" name="email" class="input" autofocus placeholder="email" required><br>
+            <input type="password" name="password" id="passwordLog" class="input" autofocus placeholder="Password"
+                required><br>
+            <button class="button" id="okeyLog">Continue</button><br>
+            <p class="text"><a class="link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form hidden" id="createAccount">
+            <h1 class="title">Create Account</h1>
+            <input type="text" id="nameSign" name="nameSign" class="input" autofocus placeholder="Username"><br>
+            <input type="text" id="emailSign" class="input" autofocus placeholder="Email Address"><br>
+            <input type="password" id="passwordSign" class="input" autofocus placeholder="Password"><br>
+            <input type="password" id="passwordSign2" class="input" autofocus placeholder="Confirm password"><br>
+            <input type="checkbox" id="messege" name="messege" value="messege">
+            <label for="messege">I want to receive messages.</label><br><br>
+            <button class="button" id="okeySign">Continue</button><br>
+            <p class="text">
+                <a class="link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+    </header>
+    <script src="../js/welcome.js"></script>
+</body>
+
+</html>

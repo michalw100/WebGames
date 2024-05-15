@@ -1,0 +1,64 @@
+@import url(https://fonts.google.com/specimen/Shantell+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html,
+body {
+    margin: 0%;
+    font: 500 1rem 'Quicksand', sans-serif;
+    background-image: url("../images/ball.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#nav {
+    border: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+
+
+footer {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 0.2%;
+    background-color: #98bede;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 2px solid black;
+    position: fixed;
+}
+
+footer>a>img {
+    width: 1.5em;
+}
+
+#memoryGame {
+    margin-top: 10%;
+    text-align: left;
+    font-size: 35px;
+    text-shadow: 0 0 5px #98bede;
+    margin-bottom: 20%;
+    margin-left: 15%;
+
+
+}
+
+@media screen and (max-width: 580px) {
+    #nav {
+        height: 200px;
+    }
+
+    #memoryGame {
+        margin-top: 45%;
+    }
+}

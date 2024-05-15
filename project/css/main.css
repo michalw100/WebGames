@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html,
+body {
+    margin: 0;
+    font: 500 1rem 'Quicksand', sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+#nav {
+    border: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 0.2%;
+    background-color: #98bede;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 2px solid black;
+}
+
+footer>a>img {
+    width: 1.5em;
+}
+
+.container {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-auto-rows: 400px;
+    margin: 5% 5% 5% 5%;
+
+}
+
+.container2>img {
+    border-radius: 5%;
+    transition: all 0.5s linear;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    object-fit: cover;
+}
+
+.container img {
+    width: 100%;
+    border-radius: 2%;
+    object-fit: cover;
+    align-items: flex-end;
+    transition: all 0.8s linear;
+
+}
+
+img:hover,
+img:focus,
+img:active {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0 0 5px #98bede;
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        margin-top: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #nav {
+        height: 200px;
+    }
+}

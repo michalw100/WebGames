@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html,
+body {
+    margin: 0;
+    font: 500 1rem 'Quicksand', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: url("../images/levels.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 5px #98bede;
+}
+
+main {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 100%;
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+#hard {
+    background-color: rgb(234, 88, 59);
+    display: inline;
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+#medium {
+    background-color: rgb(240, 191, 46);
+    display: inline;
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+#easy {
+    background-color: rgb(61, 197, 70);
+    display: inline;
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+#hard:hover,
+#medium:hover,
+#easy:hover {
+    border-radius: 5%;
+    transition: all 0.5s linear;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#nav {
+    border: none;
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 0.2%;
+    background-color: #98bede;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-top: 2px solid black;
+    position: fixed;
+}
+
+footer>a>img {
+    width: 1.5em;
+}
+
+#container {
+    width: 500px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #98bede33;
+}
+
+#hard,
+#medium,
+#easy {
+    margin: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.text {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#bottom {
+    margin-bottom: 8%;
+}
+
+@media screen and (max-width: 570px) {
+    #container {
+        flex-direction: column;
+        padding: 1rem;
+        width: 80%;
+    }
+
+    h1 {
+        margin-top: 82%;
+        margin-left: 2%;
+        margin-right: 2%;
+        text-align: center;
+    }
+}

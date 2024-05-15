@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html,
+body {
+    font: 500 1rem 'Quicksand', sans-serif;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+#nav {
+    border: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+h1 {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0 0 5px #98bede;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0 0 5px #98bede;
+}
+
+#newGame {
+    margin-left: 43.5%;
+    font: 300 1rem 'Quicksand', sans-serif;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0 0 5px #98bede;
+    background-color: white;
+}
+
+.cardBtn {
+    background-image: url("../images/backgroundcard.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 12em;
+    height: 12em;
+    transition: all 0.5s linear;
+    transform-style: preserve-3d;
+    margin-bottom: 5%;
+}
+
+#cards {
+    margin-left: 14%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    row-gap: 5%;
+}
+
+#cards img {
+    width: 12em;
+    height: 12em;
+    object-fit: cover;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.front:hover,
+.back:hover {
+    box-shadow: 0px 0px 20px 1px #000;
+}
+
+.rotate {
+    transform: rotateY(180deg);
+}
+
+@media (max-width:1600px) {
+    #cards {
+        grid-template-columns: auto auto auto auto;
+        row-gap: 2%;
+    }
+
+    #newGame {
+        margin-left: 40%;
+    }
+}
+
+@media (max-width:1300px) {
+    #cards {
+        grid-template-columns: auto auto auto;
+        row-gap: 2%;
+    }
+
+    #newGame {
+        margin-left: 37%;
+    }
+}
+
+@media (max-width:900px) {
+    #cards {
+        grid-template-columns: auto auto;
+        row-gap: 2%;
+    }
+
+    #newGame {
+        margin-left: 32%;
+    }
+
+    h1 {
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:700px) {
+    #newGame {
+        margin-left: 28%;
+    }
+
+    h1 {
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    h1 {
+        margin-top: 42%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #newGame {
+        margin-left: 24%;
+    }
+
+    #cards {
+        column-gap: 2%;
+        margin-left: 10%;
+        margin-bottom: 2%;
+    }
+
+    #nav {
+        height: 200px;
+    }
+}
